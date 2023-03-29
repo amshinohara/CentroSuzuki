@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Centro Suzuki Prudente</title>
+        <link href="estilo.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container mx-auto bg-light mt-1 w-90">
+            <header class="row">
+                <div class="ocultar col-12" id="barra_acessibilidade">
+                    <ul id="atalhos">
+                        <li><a href="#menu" accesskey="1">Ir para menu [1]</a></li>
+                        <li><a href="#home" accesskey="2">Ir para home [2]</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img class="img-fluid" src="logo.png" alt="Imagem formada por uma criança assobiando e em frente está escrito Método Suzuki.">
+                    </div>
+                    <div class="col-8"><br/><br/>
+                        <h1 class="titulo">Centro Suzuki Prudente</h1>
+                    </div>
+                </div>
+            </header>
+            <section class="row">
+                <div class="oculta col-12">
+                    <h2 class="d-none" id="menu">Menu</h2>
+                </div>
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Cursos.html">Cursos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Professores.html">Professores</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Metodologia.html">Metodologia Suzuki</a>
+                                </li>                                        
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Sobre.html">Sobre Nós</a>
+                                </li>                                        
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Contato.html">Contato</a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </nav>    
+                </div>
+                <div class="col-12">
+                    <div class="container">
+                        <div class="photoWrapper">       
+                            <img class="mySlides img-fluid center" src="home01.png" alt="Imagem de um bebê tocando uma tambor" style="width:70%;height:70%">
+                        </div>
+                        <div class="photoWrapper">   
+                            <img class="mySlides img-fluid center" src="home02.jpg" alt="Imagem de um violoncelo sendo tocado por uma criança pequena" style="width:70%;height:70%">
+                        </div>
+                        <div class="photoWrapper"> 
+                            <img class="mySlides img-fluid center" src="home03.jpg" alt="Imagem de uma crinaça tocando violino" style="width:70%;height:70%">
+                        </div>
+                    </div>
+                    <div class="container"><br/>
+                        <div class="w3-center w3-display-bottommiddle center" style="width:100%">
+                            <button class="w3-left" onclick="plusDivs(-1)">Anterior</button>
+                            <button class="w3-right" onclick="plusDivs(1)">Próximo</button>
+                            <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+                            <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+                            <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+                        </div>          
+                    </div>
+                </div>
+                <article class="col-12"><br/> 
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 id="home">Um lugar para crescer</h2><br/><br/>
+                            <p class="referencia">"Qualquer criança é capaz de demonstrar habilidades superiores se forem usados métodos corretos de prática e treinamento"<p>
+                            <p class="citado">Shinichi Suzuki</p><br/>
+                            <p class="first">Conhecido como “Método da educação do talento”, a filosofia Suzuki reconhece que todas as crianças aprendem sua língua materna com amor e encorajamento dentro de seu ambiente familiar e social. Baseado nesse mesmo princípio, buscamos oferecer um terreno fértil para o desenvolvimento integral do ser humano.</p>
+                            <p class="referencia">“Talento não é herdado, e sim, treinado e educado"<p>
+                            <p class="citado">Shinichi Suzuki</p><br/>
+                            <p class="first">O Centro Suzuki de Presidente Prudente acredita na importância do desenvolvimento como um todo, abrangendo saúde física, mental e social para formação de individuos capazes, abundantes e felizes.</p>
+                        </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid center" src="instrumentos.jpeg" alt="Imagem formada por um violino encostado em um violoncelo em meio a natureza" style="width:80%;height:80%">
+                    </div>
+                    </div>
+                </article>        
+            </section>
+            <footer class="row">
+                <div class="col-sm-4">
+                    <p>Copyright © 2023</p>
+                </div>
+                <div class="col-sm-8">
+                    <p class="float-right">Rua Casemiro Dias, 1520, Presidente Prudente - São Paulo<br/></p>
+                </div>
+            </footer>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            function currentDiv(n) {
+              showDivs(slideIndex = n);
+            }
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              if (n > x.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                 dots[i].className = dots[i].className.replace(" w3-white", "");
+              }
+              x[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " w3-white";
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <noscript>Atualize seu navegador</noscript>
+        </div>
+    </body>
+</html>
